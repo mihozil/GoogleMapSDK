@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lLs-57-H83">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ho Chi Minh city-->
+        <scene sceneID="y4M-Ai-NLh">
+            <objects>
+                <viewController title="Ho Chi Minh city" id="N9B-ER-iPX" customClass="HCMUniversities" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uj7-fc-wsp"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Bt-ts-K31"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VL8-1p-nbO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a1B-PV-zv6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Bt-ts-K31" firstAttribute="top" secondItem="a1B-PV-zv6" secondAttribute="bottom" id="EBI-jw-Elm"/>
+                            <constraint firstItem="a1B-PV-zv6" firstAttribute="top" secondItem="VL8-1p-nbO" secondAttribute="topMargin" id="Gr4-xg-HTF"/>
+                            <constraint firstItem="a1B-PV-zv6" firstAttribute="leading" secondItem="VL8-1p-nbO" secondAttribute="leadingMargin" constant="-20" id="ao4-g7-nP6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a1B-PV-zv6" secondAttribute="trailing" constant="-20" id="wTJ-2f-NQj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ho Chi Minh city" image="chobenthanh.jpg" selectedImage="chobenthanh.jpg" id="bLF-1A-AjO" userLabel="Ho Chi Minh city"/>
+                    <connections>
+                        <outlet property="mapVIew" destination="a1B-PV-zv6" id="8Y6-Fa-Yfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5v-rM-Zby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="390"/>
+        </scene>
+        <!--Ha Noi-->
+        <scene sceneID="gxy-3K-SQF">
+            <objects>
+                <viewController title="Ha Noi" id="n3B-Wx-mCf" customClass="HaNoiUniversities" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jdd-ym-k8h"/>
+                        <viewControllerLayoutGuide type="bottom" id="qip-bu-cKE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="wna-Ll-CGI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EGI-CD-6tQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="EGI-CD-6tQ" secondAttribute="trailing" constant="-20" id="Dkq-de-bUd"/>
+                            <constraint firstItem="EGI-CD-6tQ" firstAttribute="top" secondItem="wna-Ll-CGI" secondAttribute="topMargin" id="JAQ-ku-8Uf"/>
+                            <constraint firstItem="qip-bu-cKE" firstAttribute="top" secondItem="EGI-CD-6tQ" secondAttribute="bottom" id="Rn1-ar-Bp6"/>
+                            <constraint firstItem="EGI-CD-6tQ" firstAttribute="leading" secondItem="wna-Ll-CGI" secondAttribute="leadingMargin" constant="-20" id="ieR-yJ-Owf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ha Noi" image="thaprua.jpg" selectedImage="thaprua.jpg" id="IBv-tl-WWx" userLabel="Ha Noi"/>
+                    <connections>
+                        <outlet property="mapView" destination="EGI-CD-6tQ" id="v2O-VE-Qmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWN-NQ-mre" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-236"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="azO-rc-7jN">
+            <objects>
+                <tabBarController id="lLs-57-H83" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Vh5-qQ-oEO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="n3B-Wx-mCf" kind="relationship" relationship="viewControllers" id="o7z-bX-plx"/>
+                        <segue destination="N9B-ER-iPX" kind="relationship" relationship="viewControllers" id="WAT-3i-mMw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUr-xX-OC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105.06666666666666" y="77.626666666666665"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chobenthanh.jpg" width="35" height="35"/>
+        <image name="thaprua.jpg" width="35" height="35"/>
+    </resources>
+</document>

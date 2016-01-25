@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Đại học Ngoại Thương</string>
+		<key>adress</key>
+		<string>91 Chùa Láng, Hà Nội</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Đại học Bách Khoa</string>
+		<key>adress</key>
+		<string>64 Giải Phóng, Hà Nội</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Học viện Bưu Chính </string>
+		<key>adress</key>
+		<string>Trần Phú, Hà Nội</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Đại học Hà Nội</string>
+		<key>adress</key>
+		<string>9 Nguyễn Trãi, Hà Nội</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Học viện Ngoại Giao</string>
+		<key>adress</key>
+		<string>69 Chùa Láng, Hà Nội</string>
+	</dict>
+</array>
+</plist>
